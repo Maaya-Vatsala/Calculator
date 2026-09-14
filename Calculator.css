@@ -1,0 +1,85 @@
+/* aesthetic light academia hehe*/
+
+body{
+    background-color : #e8dcc8;
+}
+
+/* titre */
+h1{
+    color : black;
+    text-align: center;
+    font-family : "times new roman", serif;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom : 20px;
+}
+
+/* calculatrice */
+.calculator{
+    width : 300px;
+    margin : 20px auto;
+    padding : 20px;
+    font-family : "times new roman", serif;
+    background-color : rgb(205, 110, 15);
+    border : 3px solid #fafad2;
+    border-radius: 10px;
+}
+
+/* affichage */
+#display{
+    width : 95%;
+    height : 60px;
+    background-color : #f2f0ef;
+    color : black;
+    font-family : "times new roman", serif;
+    font-size : 24px;
+    text-align : right;
+    margin-bottom : 20px;
+    padding : 10px;
+    border : 2px solid #8c7355;
+    border-radius: 10px;
+}
+
+/*buttons*/
+.buttons{
+    display : grid;
+    grid-template-columns : repeat(4, 1fr);
+    gap : 10px;
+}
+
+button{
+    width : 100%;
+    height : 60px;
+    background-color : #d6a055; 
+    color : black;
+    font-family : "times new roman", serif;
+    font-size : 20px;
+    border-radius: 10px;
+    border : 2px solid #ba9e7d;
+}
+
+/* buttons spéciales */
+.zero{
+    grid-column : span 3;
+}
+
+#btn-ac{
+    background-color : #985707;
+    color :#c83022 ;
+}
+
+#btn-del{
+    background-color : #985707;
+    color : #c83022;
+}
+
+#btn-equal{
+    background-color : #985707;
+    color : #fafad2;
+}
+
+/* opérateurs */
+[data-op]{
+    background-color : #985707;
+    color : black;
+}

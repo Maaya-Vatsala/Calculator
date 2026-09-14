@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title >Calculator</title>
+        <link rel="stylesheet" href="Calculator.css">
+    </head>
+
+    <body>
+        <h1>Calculator</h1>
+    
+        <div class="calculator">
+            <div id="display">0</div>
+
+            <div class="buttons">
+                <button id="btn-ac" onclick="clearDisplay()">AC</button>
+                <button id="btn-del" onclick="delLast()">DEL</button>
+                <button data-op="+" onclick="appendOpe('+')">+</button>
+                <button data-op="-" onclick="appendOpe('-')">-</button>
+
+                <button data-num="7" onclick="appendNum('7')">7</button>
+                <button data-num="8" onclick="appendNum('8')">8</button>
+                <button data-num="9" onclick="appendNum('9')">9</button>
+                <button data-op="*" onclick="appendOpe('*')">x</button>
+
+                <button data-num="4" onclick="appendNum('4')">4</button>
+                <button data-num="5" onclick="appendNum('5')">5</button>
+                <button data-num="6" onclick="appendNum('6')">6</button>
+                <button data-op="/" onclick="appendOpe('/')">/</button>
+
+                <button data-num="1" onclick="appendNum('1')">1</button>
+                <button data-num="2" onclick="appendNum('2')">2</button>
+                <button data-num="3" onclick="appendNum('3')">3</button>
+                <button data-op="." onclick="appendDot()">.</button>
+
+                <button data-num="0" class="zero" onclick="appendNum('0')">0</button> 
+                <button id="btn-equal" onclick="result()">=</button>
+            </div>
+        </div>
+        <script src="Calculator.js"></script>
+    </body>
+
+</html>
+
+<!--
+id = identifiant unique au CSS et JS
+class = regrouper plusieurs éléments, réutilisable
+data = attribut personnalisé pour JS
+button = élément interactif pour action
+-->
